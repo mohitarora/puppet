@@ -1,0 +1,5 @@
+<% if override_properties != '' -%>
+<% override_properties.split(",").each do |prop| -%>
+<%= prop.gsub("--", "=") %>
+<% end -%>
+<% end -%>
